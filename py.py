@@ -1,4 +1,6 @@
-def printValue(s1,s2):
-    print(int(s1)+int(s2))
-
-printValue("3","4")
+def simple():
+    for i in range(20):
+        yield i
+x = simple()
+for j in x:
+    print(j)
